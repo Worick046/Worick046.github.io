@@ -182,7 +182,7 @@ function drawNotation() {
     let quarterDistance = staffHeight * 0.75;
     let pitchShiftDistance = staffHeight / 10;
     for (let i = 0; i < notes.length; i++) {
-        drawHalfNote(quarterDistance * (i + 1), staffYShift + (33 - notes[i].noteNumber) * pitchShiftDistance);
+        drawQuarterNote(quarterDistance * (i + 1), staffYShift + (33 - notes[i].noteNumber) * pitchShiftDistance);
     }
     drawStaff();
 }
